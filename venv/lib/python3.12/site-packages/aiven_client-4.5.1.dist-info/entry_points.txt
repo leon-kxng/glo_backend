@@ -1,0 +1,2 @@
+[console_scripts]
+avn = aiven.client.__main__:main
