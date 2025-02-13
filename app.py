@@ -11,12 +11,12 @@ CORS(app)
 
 app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv(
     "DATABASE_URL",
-    "mysql+pymysql://uakiu3zpkm6au6ym:cZYWfPXkc51506FLF0Ky@barz3foafqslz9vob4dq-mysql.services.clever-cloud.com:3306/barz3foafqslz9vob4dq"
+    "mysql+pymysql://root:cee@localhost:3306/people_db"
 )
 app.config["SQLALCHEMY_BINDS"] = {
     "users": os.getenv(
         "USERS_DATABASE_URL",
-        "mysql+pymysql://uakiu3zpkm6au6ym:cZYWfPXkc51506FLF0Ky@barz3foafqslz9vob4dq-mysql.services.clever-cloud.com:3306/users_db"
+        "mysql+pymysql://root:cee@localhost/users_db",
     )
 }
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
